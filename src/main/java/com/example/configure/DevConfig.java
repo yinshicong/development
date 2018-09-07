@@ -7,7 +7,6 @@ import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 /**
@@ -35,15 +34,7 @@ public class DevConfig implements WebMvcConfigurer {
      */
     @Override
     public void addArgumentResolvers(List<HandlerMethodArgumentResolver> resolvers) {
-        resolvers.add(myUserArgumentResolver);
-    }
-
-    public static void main(String[] args) {
-
-
-
-
-        System.out.println(new BigDecimal("0").intValue() == 0);
+//        resolvers.add(myUserArgumentResolver);
     }
 
 }
