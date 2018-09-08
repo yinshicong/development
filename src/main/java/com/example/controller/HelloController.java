@@ -18,7 +18,7 @@ public class HelloController {
         return "hello wechat";
     }
 
-    @RequestMapping("hello")
+    @RequestMapping("/hello")
     public String hello(){
         return "hello world";
     }
